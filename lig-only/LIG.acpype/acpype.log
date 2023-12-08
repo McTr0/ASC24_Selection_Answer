@@ -1,0 +1,118 @@
+============================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2023.10.27 (c) 2023 AWSdS |
+============================================================================
+DEBUG: CLI: -i 4i4f_ligand-prepared.pdb -b LIG -a gaff2
+DEBUG: Python Version 3.9.18 | packaged by conda-forge | (main, Aug 30 2023, 03:49:32) 
+[GCC 12.3.0]
+DEBUG: Max execution time tolerance is 3h
+WARNING: In LIG_AC.lib, residue name will be 'R1BR' instead of '1BR' elsewhere
+DEBUG: setResNameCheckCoords done
+WARNING: no charge value given, trying to guess one...
+DEBUG: guessCharge: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/obabel -ipdb 4i4f_ligand-prepared.pdb -omol2 -O LIG.mol2
+DEBUG: 1 molecule converted
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/antechamber -dr no -i /home/galliumer/Downloads/fak_example/.acpype_tmp_LIG/LIG.mol2 -fi mol2 -o tmp -fo mol2 -c gas -pf n
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/antechamber -dr no -i tmp -fi mol2 -o tmp -fo mol2 -c wc -cf tmp.crg -pf n
+DEBUG: ++++++++++start_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DEBUG: 
+Welcome to antechamber 22.0: molecular input file processor.
+
+Info: The atom type is set to gaff; the options available to the -at flag are
+ gaff, gaff2, amber, bcc, and sybyl.
+
+
+DEBUG: ++++++++++end_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DEBUG: readMol2TotalCharge: -1.0000000002369225e-06
+DEBUG: Net charge drift '0.000001'
+==> ... charge set to 0
+==> ... converting pdb input file to mol2 input file
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/obabel -ipdb 4i4f_ligand-prepared.pdb -omol2 -O LIG.mol2
+==> * Babel OK *
+==> Executing Antechamber...
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/antechamber -dr no -i LIG.mol2 -fi mol2 -o LIG_bcc_gaff2.mol2 -fo mol2 -c bcc -nc 0 -m 1 -s 2 -df 2 -at gaff2 -pf n 
+DEBUG: No file left to be removed
+==> * Antechamber OK *
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/parmchk2 -i LIG_bcc_gaff2.mol2 -f mol2 -o LIG_AC.frcmod -s 2
+==> * Parmchk OK *
+DEBUG: No crd or prm files left to be removed
+==> Executing Tleap...
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/tleap -f tleap.in
+DEBUG: ++++++++++start_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DEBUG: Checking 'R1BR'....
+Checking parameters for unit 'R1BR'.
+Checking for bond parameters.
+Checking for angle parameters.
+Unit is OK.
+DEBUG: ++++++++++end_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==> * Tleap OK *
+==> Removing temporary files...
+DEBUG: prmtop and inpcrd files loaded
+DEBUG: basename defined = 'LIG'
+DEBUG: getCoords done
+DEBUG: getABCOEFs done
+DEBUG: charge to be balanced: total -0.0020019948
+DEBUG: balanceCharges done
+DEBUG: Balanced TotalCharge -0.0000000000
+DEBUG: PBC = None
+DEBUG: getAtoms done
+DEBUG: getBonds done
+DEBUG: getAngles done
+DEBUG: getDihedrals done
+==> Using OpenBabel v.3.1.0
+
+==> Writing NEW PDB file
+
+==> Writing CNS/XPLOR files
+
+DEBUG: chiralGroups 0
+==> Writing GROMACS files
+
+==> Disambiguating lower and uppercase atomtypes in GMX top file, even if identical.
+
+DEBUG: writing GRO file
+DEBUG: Box size estimated
+DEBUG: writing POSRE file
+DEBUG: atomTypes 15
+DEBUG: GMX atomtypes done
+DEBUG: atoms 55
+DEBUG: GMX atoms done
+DEBUG: bonds 58
+DEBUG: GMX bonds done
+DEBUG: atomPairs 131
+DEBUG: GMX pairs done
+DEBUG: angles 103
+DEBUG: GMX angles done
+DEBUG: setProperDihedralsCoef done
+DEBUG: properDihedralsCoefRB 145
+DEBUG: properDihedralsAlphaGamma 0
+DEBUG: properDihedralsGmx45 145
+==> Writing GMX dihedrals for GMX 4.5 and higher.
+
+DEBUG: GMX special proper dihedrals done
+DEBUG: improperDihedrals 18
+DEBUG: GMX improper dihedrals done
+==> Writing CHARMM files
+
+DEBUG: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/antechamber -dr no -i LIG_bcc_gaff2.mol2 -fi mol2 -o LIG_CHARMM -fo charmm -s 2 -at gaff2 -pf n -rn R1BR
+DEBUG: ++++++++++start_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DEBUG: 
+Welcome to antechamber 22.0: molecular input file processor.
+
+Info: The atom type is set to gaff2; the options available to the -at flag are
+ gaff, gaff2, amber, bcc, and sybyl.
+
+Info: Ignoring Mol2 record type (@<TRIPOS>SUBSTRUCTURE).
+Info: Finished reading file (LIG_bcc_gaff2.mol2); atoms read (55), bonds read (58).
+Info: Determining atomic numbers from atomic symbols which are case sensitive.
+Running: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+
+Running: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff2
+
+Running: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/atomtype -i ANTECHAMBER_PREP.AC0 -o ANTECHAMBER_PREP.AC -p gaff2
+
+Running: /home/galliumer/Downloads/mambaforge/envs/gromacs_2023/bin/charmmgen -i ANTECHAMBER_PREP.AC -f ac -o LIG_CHARMM -r R1BR
+
+DEBUG: ++++++++++end_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==> Writing pickle file LIG.pkl
+==> Removing temporary files...
+Total time of execution: 4m 50s
+DEBUG: No tmp folder left to be removed

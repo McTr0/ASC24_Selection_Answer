@@ -1,0 +1,19 @@
+; LIG_GMX_OPLS.top created by acpype (v: 2023.10.27) on Fri Dec  8 19:15:47 2023
+
+; Include forcefield parameters
+#include "ffoplsaa.itp"
+
+; Include LIG_GMX.itp topology
+#include "LIG_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_LIG.itp"
+#endif
+
+[ system ]
+ LIG
+
+[ molecules ]
+; Compound        nmols
+ LIG              1     

@@ -1,0 +1,161 @@
+Remarks LIG_CNS.par created by acpype (v: 2023.10.27) on Fri Dec  8 19:15:47 2023
+
+set echo=false end
+
+{ Bonds: atomType1 atomType2 kb r0 }
+BOND   c3_   h1_    344.2   1.0969
+BOND   ca_   ha_    360.7   1.0860
+BOND   nu_   hn_    472.5   1.0137
+BOND   c3_   hc_    345.2   1.0962
+BOND   cd_   h4_    367.3   1.0818
+BOND   c3_   nh_    256.9   1.4613
+BOND   nh_   ca_    310.8   1.4030
+BOND   nh_   sy_    288.5   1.7068
+BOND   ca_   ca_    354.2   1.3986
+BOND   ca_   nu_    319.9   1.3944
+BOND   nu_   c3_    258.8   1.4590
+BOND   c3_   ca_    243.9   1.5147
+BOND   c3_   c3_    228.9   1.5354
+BOND   ca_   cc_    296.5   1.4528
+BOND   cc_   cd_    386.2   1.3730
+BOND   cc_   na_    335.5   1.3803
+BOND   cd_   sy_    216.6   1.7792
+BOND   cd_   cd_    321.5   1.4279
+BOND   cd_   nc_    417.8   1.3171
+BOND   nc_   na_    290.4   1.3570
+BOND   na_   c3_    254.8   1.4639
+BOND   sy_    o_    614.7   1.4656
+
+{ Angles: aType1 aType2 aType3 kt t0 }
+ANGLe   nh_   c3_   h1_     48.0   109.68
+ANGLe   ca_   ca_   ha_     44.9   119.88
+ANGLe   ca_   nu_   hn_     57.5   114.73
+ANGLe   nu_   c3_   h1_     48.0   109.66
+ANGLe   c3_   nu_   hn_     55.0   115.31
+ANGLe   ca_   c3_   h1_     43.8   109.60
+ANGLe   c3_   c3_   hc_     43.3   109.68
+ANGLe   cd_   cd_   h4_     43.0   126.75
+ANGLe   nc_   cd_   h4_     50.4   118.14
+ANGLe   na_   c3_   h1_     48.1   108.76
+ANGLe   h1_   c3_   h1_     35.6   108.55
+ANGLe   hc_   c3_   hc_     35.8   107.73
+ANGLe   c3_   nh_   ca_     76.9   119.53
+ANGLe   c3_   nh_   sy_     80.8   116.88
+ANGLe   nh_   ca_   ca_     67.2   121.13
+ANGLe   nh_   sy_   cd_    105.1    97.20
+ANGLe   nh_   sy_    o_    132.6   107.92
+ANGLe   ca_   nh_   sy_     82.0   116.16
+ANGLe   ca_   ca_   ca_     63.7   120.02
+ANGLe   ca_   ca_   cc_     62.2   120.91
+ANGLe   ca_   ca_   nu_     67.5   120.74
+ANGLe   ca_   nu_   c3_     75.9   123.73
+ANGLe   nu_   c3_   ca_     66.0   111.08
+ANGLe   c3_   ca_   ca_     60.7   120.83
+ANGLe   ca_   c3_   c3_     60.3   112.42
+ANGLe   c3_   c3_   c3_     59.9   112.63
+ANGLe   ca_   cc_   cd_     64.0   116.03
+ANGLe   ca_   cc_   na_     66.2   121.80
+ANGLe   cc_   cd_   sy_     62.5   123.93
+ANGLe   cc_   cd_   cd_     64.6   116.21
+ANGLe   cc_   na_   nc_     87.4   114.57
+ANGLe   cc_   na_   c3_     75.2   126.65
+ANGLe   cd_   cc_   na_     72.8   106.75
+ANGLe   cd_   sy_    o_    120.8   108.68
+ANGLe   cd_   cd_   nc_     68.5   120.70
+ANGLe   cd_   cd_   sy_     61.2   126.98
+ANGLe   cd_   nc_   na_     93.9   103.83
+ANGLe   nc_   na_   c3_     82.5   120.19
+ANGLe    o_   sy_    o_    157.8   121.38
+
+{ Proper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+DIHEdral   cc_   cd_   cd_   h4_           4.000    2   180.00
+DIHEdral   ca_   cc_   cd_   sy_           4.000    2   180.00
+DIHEdral   ca_   ca_   nu_   c3_           0.330    2   180.00
+DIHEdral   ca_   nh_   sy_   cd_           0.100    2   180.00
+DIHEdral   ca_   nu_   c3_   ca_           0.000    0     0.00
+DIHEdral   h1_   c3_   nh_   sy_           0.000    0     0.00
+DIHEdral   cd_   cd_   nc_   na_           4.750    2   180.00
+DIHEdral   c3_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   ca_   cc_   cd_   cd_           4.000    2   180.00
+DIHEdral   c3_   nh_   sy_   cd_           0.100    2   180.00
+DIHEdral   cd_   nc_   na_   c3_           4.800    2   180.00
+DIHEdral   na_   nc_   cd_   h4_           4.750    2   180.00
+DIHEdral   cd_   cd_   cc_   na_           4.000    2   180.00
+DIHEdral   nh_   ca_   ca_   cc_           3.625    2   180.00
+DIHEdral   ca_   ca_   nu_   hn_           1.050    2   180.00
+DIHEdral   ca_   cc_   na_   nc_           1.700    2   180.00
+DIHEdral   hn_   nu_   c3_   h1_           0.000    0     0.00
+DIHEdral   ca_   ca_   c3_   h1_           0.000    0     0.00
+DIHEdral   c3_   nu_   ca_   ca_           0.330    2   180.00
+DIHEdral   c3_   ca_   ca_   ca_           3.625    2   180.00
+DIHEdral   ca_   ca_   ca_   cc_           3.625    2   180.00
+DIHEdral   nc_   cd_   cd_   sy_           4.000    2   180.00
+DIHEdral   nh_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   c3_   nh_   ca_   ca_           0.753    2   180.00
+DIHEdral   ca_   ca_   ca_   nu_           3.625    2   180.00
+DIHEdral   nu_   ca_   ca_   ca_           3.625    2   180.00
+DIHEdral   h1_   c3_   nh_   ca_           0.332    2     0.00
+DIHEdral   c3_   nh_   sy_    o_           0.100    2   180.00
+DIHEdral   na_   cc_   cd_   sy_           4.000    2   180.00
+DIHEdral   ca_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   nu_   c3_   ca_   ca_           0.000    0     0.00
+DIHEdral   ca_   ca_   c3_   c3_           0.240    2   180.00
+DIHEdral   cc_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   ca_   ca_   ca_   c3_           3.625    2   180.00
+DIHEdral   c3_   c3_   c3_   hc_           0.130    3     0.00
+DIHEdral   nc_   na_   c3_   h1_           0.000    0     0.00
+DIHEdral   nh_   sy_   cd_   cd_           1.288    2   180.00
+DIHEdral   ca_   ca_   cc_   cd_           0.585    2   180.00
+DIHEdral   cd_   cd_   sy_    o_           1.267    2   180.00
+DIHEdral   nh_   sy_   cd_   cc_           1.288    2   180.00
+DIHEdral   cc_   cd_   sy_    o_           1.267    2   180.00
+DIHEdral   ca_   cc_   na_   c3_           1.700    2   180.00
+DIHEdral   cc_   cd_   cd_   nc_           4.000    2   180.00
+DIHEdral   cd_   cc_   na_   nc_           1.700    2   180.00
+DIHEdral   ca_   c3_   nu_   hn_           0.000    0     0.00
+DIHEdral   cd_   cc_   na_   c3_           1.700    2   180.00
+DIHEdral   ca_   nh_   sy_    o_           0.100    2   180.00
+DIHEdral   ca_   ca_   cc_   na_           1.097    2   180.00
+DIHEdral   cc_   na_   c3_   h1_           0.000    0     0.00
+DIHEdral   sy_   cd_   cd_   h4_           4.000    2   180.00
+DIHEdral   ha_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   nh_   ca_   ca_   ca_           3.625    2   180.00
+DIHEdral   ca_   ca_   nh_   sy_           1.050    2   180.00
+DIHEdral   cc_   na_   nc_   cd_           4.800    2   180.00
+DIHEdral   nu_   ca_   ca_   ha_           3.625    2   180.00
+DIHEdral   ca_   c3_   c3_   hc_           0.156    3     0.00
+DIHEdral   ca_   ca_   ca_   ca_           3.625    2   180.00
+DIHEdral   ca_   nu_   c3_   h1_           0.420    3     0.00
+
+{ Improper Dihedrals: aType1 aType2 aType3 aType4 kt period phase }
+IMPRoper   ca_   ca_   ca_   c3_           1.1    2   180.00
+IMPRoper   ca_   ca_   ca_   cc_           1.1    2   180.00
+IMPRoper   ca_   cd_   cc_   na_           1.1    2   180.00
+IMPRoper   c3_   ca_   nu_   hn_           1.1    2   180.00
+IMPRoper   cc_   cd_   cd_   sy_           1.1    2   180.00
+IMPRoper   c3_   cc_   na_   nc_           1.1    2   180.00
+IMPRoper   ca_   ca_   ca_   nh_           1.1    2   180.00
+IMPRoper   cd_   h4_   cd_   nc_           1.1    2   180.00
+IMPRoper   c3_   ca_   ca_   ca_           1.1    2   180.00
+IMPRoper   ca_   ca_   ca_   ha_           1.1    2   180.00
+IMPRoper   c3_   ca_   nh_   sy_           1.1    2   180.00
+IMPRoper   ca_   ca_   ca_   nu_           1.1    2   180.00
+
+{ Nonbonded: Type Emin sigma; (1-4): Emin/2 sigma }
+NONBonded   c3_    0.107800    3.397710    0.053900    3.397710
+NONBonded   nh_    0.215000    3.189952    0.107500    3.189952
+NONBonded   ca_    0.098800    3.315212    0.049400    3.315212
+NONBonded   nu_    0.154500    3.279042    0.077250    3.279042
+NONBonded   cc_    0.098800    3.315212    0.049400    3.315212
+NONBonded   cd_    0.098800    3.315212    0.049400    3.315212
+NONBonded   nc_    0.094100    3.384168    0.047050    3.384168
+NONBonded   na_    0.204200    3.205810    0.102100    3.205810
+NONBonded   sy_    0.061400    4.058400    0.030700    4.058400
+NONBonded    o_    0.146300    3.048121    0.073150    3.048121
+NONBonded   h1_    0.020800    2.421997    0.010400    2.421997
+NONBonded   ha_    0.016100    2.625479    0.008050    2.625479
+NONBonded   hn_    0.010000    1.106496    0.005000    1.106496
+NONBonded   hc_    0.020800    2.600177    0.010400    2.600177
+NONBonded   h4_    0.016100    2.536389    0.008050    2.536389
+
+set echo=true end
